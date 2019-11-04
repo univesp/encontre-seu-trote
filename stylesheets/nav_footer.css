@@ -1,0 +1,89 @@
+nav > .container, nav > .container-fluid {
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+/* nav {
+  position: relative;
+} */
+
+nav .logo {
+  position: fixed;
+}
+
+/* Botão Pular para Conteúdo Principal */
+
+nav .logo .pularNavegacao {
+  background-color: transparent;
+  color: #de1266;
+}
+
+/* Caixa do Logotipo */
+nav .logo img {
+  background-color: transparent;
+}
+
+/* Botões do Navbar */
+
+nav .nav-link {
+  height: 100%;
+  color: black;
+  background-color: transparent;
+  right: 150px;
+}
+
+nav .nav-link:focus,
+nav .nav-link:hover,
+nav .nav-link[aria-expanded="true"] {
+  background-color: #ffde52;
+  color: black;
+}
+
+nav .dropdown-menu {
+  margin-top: 0;
+  border: 2px solid #ffde52;
+}
+
+nav .dropdown-menu .jssocials-share-link {
+  /* color: #336698; */
+}
+
+/* Rodapé */
+footer {
+  border-top: 1px solid #354551;
+  flex-grow: 0;
+  padding: 0;
+}
+
+footer .btn {
+  white-space: nowrap;
+  font-size: .9rem;
+  line-height: 1.2em;
+}
+@media (max-width: 991.98px) {
+  footer .btn {
+    line-height: 1.5em;
+  }
+}
+
+footer, footer .aval-rea .btn-secondary {
+  background-color: white;
+  color: #354551;
+}
+
+
+
+/* Main */
+
+main {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+@media only screen and (max-width: 992px) {
+
+
+}

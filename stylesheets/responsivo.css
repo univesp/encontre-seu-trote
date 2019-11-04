@@ -1,0 +1,447 @@
+/* MEDIA QUERIES */
+@media (max-width: 1119.98px) {
+  .navegacao {
+    width: 900px;
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: 1em;
+  }
+  .navegacao button {
+    min-height: 60px;
+    width: auto;
+    min-width: 140px;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    padding: 10px;
+  }
+  .navegacao .voltar {
+    background-color: #fff;
+    border: 2px solid #362216;
+    color: #362216;
+  }
+  .navegacao .voltar:hover {
+    background-color: #f0f0f0;
+  }
+  .navegacao .avancar {
+    background-color: #362216;
+    color: #fff;
+  }
+  .navegacao .avancar:hover {
+    background-color: #25170f;
+  }
+  .navegacao .concluir {
+    background-color: #42842E;
+    color: #fff;
+  }
+  .navegacao .concluir:hover {
+    background-color: #377329;
+  }
+
+  .navegacao .bt-texto {
+    display: block;
+  }
+  .navegacao .bt-icone, .navegacao .concluir .bt-icone {
+    display: none;
+  }
+}
+
+@media (max-width: 991.98px) {
+  nav {
+    background-color: #ffde52;
+  }
+  nav > .container, nav > .container-fluid {
+    position: relative;
+    justify-content: space-between;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  nav .logo {
+    position: static;
+  }
+  h2 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .navegacao {
+    width: 700px;
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 1rem;
+  }
+  .tela-quiz {
+    justify-content: flex-start;
+  }
+  .tela-intro, .tela-feedback {
+    flex-direction: column;
+    height: auto;
+    min-height: 100vh;
+    justify-content: space-between;
+  }
+  .tela-intro>div {
+
+  }
+  .tela-intro .imagem {
+    width: 100%;
+    padding: 15px;
+    display: block;
+    position: static;
+    height: auto;
+  }
+  .tela-intro .imagem img {
+    display: block;
+    width: auto;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .tela-feedback .imagem {
+    width: 100%;
+    padding: 15px;
+    display: block;
+    position: static;
+    height: auto;
+  }
+  .tela-feedback .imagem h3 {
+    font-size: 1.5rem;
+    margin: 0;
+    margin-bottom: 1em;
+  }
+  .ods-icon {
+    width: 100%;
+    position: relative;
+    margin: 0;
+    justify-content: center;
+    /* padding-left: 15px;
+    padding-right: 15px; */
+    flex-wrap: nowrap;
+  }
+  .ods-icon a {
+  }
+  .ods-icon img {
+    height: 100%;
+  }
+  .odsFeed1, .odsFeed2, .odsFeed3 {
+    width: 100%;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .odsFeed1>a {
+    flex-basis: 40%;
+    max-width: 30vh;
+  }
+  .odsFeed2>a, .odsFeed3>a {
+    flex-basis: 35%;
+    max-width: 30vh;
+  }
+  .odsFeed5 {
+    width: 95%;
+    max-width: 550px;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: flex-start;
+  }
+  .odsFeed5>a {
+    flex-basis: 33%;
+  }
+  .odsFeed7, .odsFeed10 {
+    width: 100%;
+    max-width: 600px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .odsFeed7>a, .odsFeed10>a {
+    width: 25%;
+  }
+  .tela-intro .conteudo, .tela-feedback .conteudo {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    flex-grow: 1;
+  }
+  .tela-intro .conteudo .texto {
+    width: 720px;
+    max-width: 100%;
+    padding: 0 15px 20px 15px;
+  }
+  #telaA .conteudo, #telaB .conteudo, #telaC .conteudo, #telaD .conteudo {
+    margin-left: 0;
+    margin-right: 0;
+    align-items: center;
+  }
+  #telaA .conteudo {
+    background-color: #ffde52;
+  }
+  #telaB .conteudo {
+    background-color: #47eaaf;
+  }
+
+  #telaA .conteudo .texto {
+    background-color: #ffde52;
+  }
+  #telaB .conteudo .texto {
+    background-color: #47eaaf;
+  }
+  #telaC .conteudo .texto {
+    padding: 0 15px 30px 15px;
+  }
+  #telaD .conteudo .texto {
+
+  }
+
+  .tela-intro .conteudo footer {
+    width: 100%;
+    flex-grow: 0;
+    bottom: 0;
+  }
+  .botao {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  #telaA .botao, #telaB .botao  {
+    background-color: #362216;
+    color: #fff;
+  }
+  #telaA .botao:hover, #telaB .botao:hover {
+    background-color: #25170f;
+  }
+  footer {
+    border-top: none;
+  }
+
+  /* SIM-NAO */
+  .tela-opiniao.quiz-wrap {
+    width: 700px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .tela-opiniao .pergunta {
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+  .tela-opiniao .pergunta h3 {
+    text-align: center;
+  }
+  .tela-opiniao .pergunta p{
+    font-size: 1.2rem;
+  }
+  .tela-opiniao .pergunta>div {
+    display: none;
+  }
+  .item-opiniao {
+    width: 700px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .pergunta-opiniao {
+    width: 100%;
+    margin-bottom: 1.5em
+  }
+  .legenda-opiniao {
+    display: none;
+  }
+  .opcoes-opiniao {
+    margin-left: 0;
+    flex-shrink: 0;
+    flex-basis: 100%
+  }
+  .opcoes-opiniao div {
+    width: 4.5em;
+  }
+  .opcoes-opiniao input {
+    display: block;
+  }
+  .opcoes-opiniao label {
+    display: block;
+    margin-top: 10px;
+  }
+
+  /* MÚLTIPLA ESCOLHA */
+  .tela-radio {
+    align-items: center;
+    justify-content: center;
+  }
+  .tela-radio.quiz-wrap {
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 700px;
+    max-width: 100%;
+    /* min-height: 100vh; */
+    margin-left: 0;
+    border: none;
+    background-color: #fff;
+  }
+  .tela-radio .quiz-pergunta {
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    align-items: center;
+    position: static;
+    width: 100%;
+    height: auto;
+    left: 0;
+    border: none;
+    padding: 15px 15px 20px 15px;
+    font-size: 1.2rem;
+  }
+  .tela-radio .quiz-input {
+    margin-left: 0;
+    padding: 0 15px 15px 15px;
+    width: 100%;
+  }
+  .item-radio {
+    text-indent: 0;
+  }
+  .item-radio:not(:last-of-type){
+    /* margin-bottom: .5rem; */
+  }
+  .item-radio input {
+    display: none;
+  }
+  .item-radio label {
+    display: block;
+    padding: 10px;
+    border: 1px solid #de1266;
+    width: 100%;
+  }
+  .item-radio label:hover {
+    background-color: #fce2e4;
+  }
+  .item-radio input[type="radio"]:checked+label, input[type="checkbox"]:checked+label {
+  border: 1px solid #de1266;
+  background-color: #f7a1a8;
+}
+
+/* RANGE */
+.tela-range {
+}
+.tela-range.quiz-wrap, .tela-order.quiz-wrap {
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 700px;
+  max-width: 100%;
+  /* min-height: 100vh; */
+  margin-left: 0;
+  border: none;
+  background-color: #fff;
+}
+.tela-range .quiz-pergunta, .tela-order .quiz-pergunta {
+  align-items: center;
+  position: static;
+  width: 100%;
+  height: auto;
+  left: 0;
+  padding: 15px 15px 20px 15px;
+  font-size: 1.2rem;
+}
+.tela-range .quiz-input {
+  border: none;
+  margin-left: 0;
+  padding: 0 15px 15px 15px;
+  width: 100%;
+}
+/* .item-range {
+  margin-top: 1.2em;
+  margin-bottom: 1.2em;
+}
+.legendas-range {
+  display: flex;
+} */
+
+/* ORDER */
+.tela-order .quiz-order {
+  width: 100%;
+  padding: 0px 15px 20px 15px;
+  display: flex;
+}
+.tela-order ul {
+}
+
+#sortable {
+  overflow-x: hidden;
+}
+
+
+}
+
+@media (max-width: 767.98px) {
+  .tela-quiz {
+    justify-content: space-between;
+  }
+  .tela-feedback .imagem h3 {
+    font-size: 1.2rem;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+
+  /* ORDER */
+  #sortable {
+    margin-left: 10px;
+    overflow-x: hidden;
+  }
+
+  .tela-order ul:first-of-type li {
+    width: 2rem;
+    font-size: 1.5rem;
+  }
+  .tela-order ul li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+ }
+
+
+@media (max-width: 575.98px) {
+  /* RANGE */
+  .legendas-range {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 1em;
+  }
+  .legendas-range::before {
+    margin-top: 10px;
+    content:"não gostaria";
+    font-size: .9rem;
+    line-height: 1.2em;
+    color: #de1266;
+    text-align: left;
+    order: 2;
+    margin-left: 5px;
+  }
+  .legendas-range::after {
+    margin-top: 10px;
+    content:"gostaria muito";
+    font-size: .9rem;
+    line-height: 1.2em;
+    color: #de1266;
+    order: 3;
+    text-align: right;
+    margin-right: 5px;
+  }
+  .range-wrapper {
+    width: 100%;
+    margin: 0;
+  }
+
+ }
+
+@media (max-width: 419.98px) {
+  .navegacao button {
+    min-width: 0;
+    width: 50%;
+  }
+}

@@ -1,0 +1,60 @@
+#telaA, nav,
+#telaB,
+/* .tela-quiz, .navegacao, */
+/* #tela1, */
+#tela2,
+#tela3,
+#tela4,
+#tela5,
+#tela6,
+#tela7,
+#tela8,
+#tela9,
+#tela10,
+#telaC,
+#telaD
+/* #executa */
+ {
+  display: none;
+}
+
+/* FEEDBACK ODS */
+.iconOds1, #textoOds1,
+.iconOds2, #textoOds2,
+.iconOds3, #textoOds3,
+.iconOds4, #textoOds4,
+.iconOds5, #textoOds5,
+.iconOds6, #textoOds6,
+.iconOds7, #textoOds7,
+.iconOds8, #textoOds8,
+.iconOds9, #textoOds9,
+.iconOds10, #textoOds10,
+.iconOds11, #textoOds11,
+.iconOds12, #textoOds12,
+.iconOds13, #textoOds13,
+.iconOds14, #textoOds14,
+.iconOds15, #textoOds15,
+.iconOds16, #textoOds16,
+.iconOds17, #textoOds17
+{
+  display: none
+}
+
+/* NOTAS */
+/* #telaA  - .tela-intro
+#telaB  - .tela-intro
+#tela1  - .tela-radio
+#tela2  - .tela-range
+#tela3  - .tela-range
+#tela4  - .tela-order
+#tela5  - .tela-radio
+#tela6  - .tela-radio
+#tela7  - .tela-radio
+#tela8  - .tela-radio
+#tela9  - .tela-opinao
+#tela10 - .tela-radio (checkbox)
+
+.tela-radio
+.tela-range
+.tela-order
+.tela-opiniao */

@@ -1,0 +1,1412 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:image" content="assets/fb-share.png">
+  <meta name="author" content="Univesp">
+
+  <meta name="description" property="og:description" content="Qual é a sua causa? A Agenda 2030, definida em 2015 pela ONU, traça 17 Objetivos de Desenvolvimento Sustentável para o planeta. Veja com qual objetivo você se identifica mais e como você pode contribuir para que ele vire realidade.">
+
+  <title>Univesp | Encontre seu trote</title>
+
+  <link rel="shortcut icon" href="https://apps.univesp.br/common/favicon.ico" type="image/x-icon" />
+
+  <!-- Arquivos Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+
+  <!-- Ícones por Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <!-- Ícones por Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Tipografia institucional por Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
+  <!-- Fonte REA -->
+  <link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
+
+  <!-- Compartilhamento por jsSocials -->
+  <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.css" />
+  <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials-theme-minima.css" />
+
+
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="https://apps.univesp.br/common/rea-geral-2.0.css">
+  <link rel="stylesheet" href="stylesheets/nav_footer.css">
+  <link rel="stylesheet" href="stylesheets/main.css">
+  <link rel="stylesheet" href="stylesheets/escondidos.css">
+  <link rel="stylesheet" href="stylesheets/responsivo.css">
+  <link rel="stylesheet" href="stylesheets/custom-animate.css">
+
+</head>
+
+<body class="d-flex flex-column">
+
+  <!-- Utilizar essa DIV caso o REA não se adapte a todos os tamanhos de tela -->
+  <!-- <div class="esconder-tela-pequena"> -->
+
+  <!-- Menu -->
+  <nav>
+    <div class="container d-flex">
+
+      <div class="logo">
+
+        <a class="pularNavegacao" href="#conteudoPrincipal">Pular para Conteúdo Principal</a>
+        <a href="https://univesp.br/" target="_blank">
+          <img src="https://apps.univesp.br/common/colorida-positiva.svg" alt="Link para site institucional. Logotipo da universidade formado pela palavra Univesp em letras maiúsculas, sendo a letra V estilizada.">
+          <!-- outras opções de img src: colorida-negativa.svg, traco-positiva.svg, traco-negativa.svg -->
+        </a>
+
+      </div>
+
+      <ul class="nav justify-content-end">
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+            <i class="material-icons" aria-label="Opções de Compartilhamento">share</i>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right">
+            <div class="sharing" id="share-buttons"></div>
+          </div>
+        </li>
+
+      </ul>
+
+    </div>
+  </nav>
+
+  <!-- Conteúdo -->
+  <main id="conteudoPrincipal">
+
+    <button id="executa" style="position: fixed; z-index: 500;">executa!</button>
+
+    <!-- TELA A -->
+    <div class="tela tela-intro" id="telaA">
+      <div class="imagem">
+        <h2 class="d-lg-none d-block">encontre seu trote</h2>
+        <img src="assets/planta.png" />
+      </div>
+      <div class="conteudo">
+        <div class="texto">
+          <h2 class="d-none d-lg-block">encontre seu trote</h2>
+          <p>
+            Em 2015, a ONU apresentou a Agenda 2030, com 17 objetivos para transformar o mundo nos próximos anos. Mas o que nós, enquanto cidadãos comuns, podemos fazer para contribuir com a mudança? <strong>MUITA COISA!</strong>
+          </p>
+          <p>
+            Como universitário, você pode mobilizar sua comunidade em prol de uma causa, já que o papel da universidade abrange não só o ensino e a pesquisa, mas também as atividades de extensão.
+          </p>
+          <p>
+            Pensando nisso, que tal organizar um <strong>trote solidário</strong>, que contribua para a transformação?
+          </p>
+          <button class="botao">prosseguir</button>
+        </div>
+        <footer>
+          <div class="container d-flex justify-content-between align-items-center">
+            <div class="cred-rea">
+              <!-- Comente em caso de adaptação do REA -->
+              <p>
+                <span>Recurso Educacional Aberto (REA) desenvolvido pela <a href="https://univesp.br/" target="blank">Univesp</a>, disponível sob licença <a href="http://apps.univesp.br/common/license_MIT_2019.txt" target="_blank">MIT</a>.
+                  Você pode utilizá-lo, compartilhá-lo e modificá-lo.</span>
+                <span><button class="btn btn-link" data-toggle="modal" data-target="#creditos">Créditos</button></span>
+                <span><a href="#" target="_blank" aria-label="GitHub">GitHub <i class="fab fa-github"></i></a></span>.
+                <p>
+                  <!-- Descomente em caso de adaptação do REA -->
+                  <!-- <p>
+                <span>Recurso Educacional Aberto (REA) adaptado por SEU NOME.</span>
+                <span><a href="#">Versão original da Univesp</a></span>
+              </p> -->
+            </div>
+            <div class="aval-rea d-flex">
+              <!-- Atualizar "Nome+do+Recurso" -->
+              <a class="btn btn-secondary" href="https://docs.google.com/forms/d/e/1FAIpQLSfyRKucIP8I5dWo07s3jxspUlU-oOf6JGImYgwkDgoBwHyHEQ/viewform?usp=pp_url&entry.542052009=Encontre+seu+trote" target="_blank">Avaliar <br class="d-none d-lg-block" />este
+                recurso</a>
+              <!-- Atualizar "Nome+do+Recurso" -->
+              <a class="btn btn-secondary" href="https://docs.google.com/forms/d/e/1FAIpQLSeSGJZ6Pi7D8r1sIWaE0im6-vmQTT88ufqlkhMN7SoN32HKSw/viewform?usp=pp_url&entry.1523910789=Encontre+seu+trote" target="_blank">Reportar <br class="d-none d-lg-block" />
+                erro</a>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- TELA B -->
+    <div class="tela tela-intro" id="telaB">
+      <div class="conteudo">
+        <div class="texto">
+          <p>
+            Respondendo às questões a seguir, você vai descobrir as causas com que mais se identifica na Agenda 2030 e, a partir daí, conhecer ideias de trote solidário para contribuir com essas causas.
+          </p>
+          <p>
+            As perguntas não têm respostas certas ou erradas! O objetivo do teste é descobrir quais causas mobilizam você, portanto responda com tranquilidade e sinceridade.
+          </p>
+          <button class="botao">vamos lá?</button>
+        </div>
+      </div>
+      <div class="imagem">
+        <img src="assets/garrafa.png" />
+      </div>
+    </div>
+
+    <div class="tela-quiz">
+      <!-- TELA 1 -->
+      <div class="tela-radio quiz-wrap sem-avancar" id="tela1">
+        <div class="quiz-pergunta">
+          <h3>
+            <span>1</span>/10
+          </h3>
+          <div>
+            Qual você acredita ser o maior potencial do trote solidário?
+          </div>
+        </div>
+        <div class="quiz-input">
+          <div class="item-radio">
+            <input type="radio" id="p1-a" name="pergunta1" value="a">
+            <label for="p1-a">Realizar ações sociais em comunidades carentes.</label>
+          </div>
+          <div class="item-radio">
+            <input type="radio" id="p1-b" name="pergunta1" value="b">
+            <label for="p1-b">Conscientizar as pessoas sobre questões ambientais.</label>
+          </div>
+          <div class="item-radio">
+            <input type="radio" id="p1-c" name="pergunta1" value="c">
+            <label for="p1-c">Estabelecer parcerias com empresas e instituições fora da universidade.</label>
+          </div>
+          <div class="item-radio">
+            <input type="radio" id="p1-d" name="pergunta1" value="d">
+            <label for="p1-d">Realizar ações educativas e que promovam a igualdade.</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- TELA 2 -->
+      <div class="tela-range quiz-wrap" id="tela2">
+
+        <div class="quiz-pergunta">
+          <h3>
+            <span>2</span>/10
+          </h3>
+          <div>
+            Analise as ações seguintes e classifique o quanto você se identifica ou gostaria de realizar cada uma delas.
+          </div>
+        </div>
+
+        <div class="quiz-input">
+
+          <div class="item-range">
+            <label for="p2-a">
+              Construir uma horta comunitária.
+            </label>
+            <div class="legendas-range">
+              <div class="range-wrapper">
+                <div class="gradacao-range">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+                <input type="range" id="p2-a" name="pergunta2a" min="1" max="5" value="3">
+              </div>
+            </div>
+          </div>
+
+          <div class="item-range">
+            <label for="p2-b">
+              Organizar oficinas de produção textual e cursos de alfabetização.
+            </label>
+            <div class="legendas-range">
+              <div class="range-wrapper">
+                <div class="gradacao-range">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+                <input type="range" id="p2-b" name="pergunta2b" min="1" max="5" value="3">
+              </div>
+            </div>
+          </div>
+
+          <div class="item-range">
+            <label for="p2-c">
+              Promover palestras sobre empreendedorismo para mulheres e mães.
+            </label>
+            <div class="legendas-range">
+              <div class="range-wrapper">
+                <div class="gradacao-range">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+                <input type="range" id="p2-c" name="pergunta2c" min="1" max="5" value="3">
+              </div>
+            </div>
+          </div>
+
+          <div class="item-range">
+            <label for="p2-d">
+              Implementar a coleta seletiva na sua universidade.
+            </label>
+            <div class="legendas-range">
+              <div class="range-wrapper">
+                <div class="gradacao-range">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+                <input type="range" id="p2-d" name="pergunta2d" min="1" max="5" value="3">
+              </div>
+            </div>
+          </div>
+
+          <div class="item-range">
+            <label for="p2-e">
+              Arrecadar doações para um abrigo de animais abandonados.
+            </label>
+            <div class="legendas-range">
+              <div class="range-wrapper">
+                <div class="gradacao-range">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+                <input type="range" id="p2-e" name="pergunta2e" min="1" max="5" value="3">
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- TELA 3 -->
+      <div class="tela-range quiz-wrap" id="tela3">
+
+        <div class="quiz-pergunta">
+          <h3>
+            <span>3</span>/10
+          </h3>
+          <div>
+            Analise as ações seguintes e classifique o quanto você se identifica ou gostaria de realizar cada uma delas.
+          </div>
+        </div>
+
+        <div class="quiz-input">
+
+          <div class="item-range">
+            <label for="p3-a">
+              Organizar um mutirão de doação de sangue.
+            </label>
+            <div class="legendas-range">
+              <div class="range-wrapper">
+                <div class="gradacao-range">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+                <input type="range" id="p3-a" name="pergunta3a" min="1" max="5" value="3">
+              </div>
+            </div>
+          </div>
+
+          <div class="item-range">
+            <label for="p3-b">
+              Promover o uso da bicicleta em vez do carro na comunidade.
+            </label>
+            <div class="legendas-range">
+              <div class="range-wrapper">
+                <div class="gradacao-range">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+                <input type="range" id="p3-b" name="pergunta3b" min="1" max="5" value="3">
+              </div>
+            </div>
+          </div>
+
+          <div class="item-range">
+            <label for="p3-c">
+              Organizar uma consultoria jurídica para a comunidade.
+            </label>
+            <div class="legendas-range">
+              <div class="range-wrapper">
+                <div class="gradacao-range">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+                <input type="range" id="p3-c" name="pergunta3c" min="1" max="5" value="3">
+              </div>
+            </div>
+          </div>
+
+          <div class="item-range">
+            <label for="p3-d">
+              Fazer parcerias com empresas da região e realizar uma feira de empregos.
+            </label>
+            <div class="legendas-range">
+              <div class="range-wrapper">
+                <div class="gradacao-range">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+                <input type="range" id="p3-d" name="pergunta3d" min="1" max="5" value="3">
+              </div>
+            </div>
+          </div>
+
+          <div class="item-range">
+            <label for="p3-e">
+              Promover palestras sobre saneamento básico.
+            </label>
+            <div class="legendas-range">
+              <div class="range-wrapper">
+                <div class="gradacao-range">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+                <input type="range" id="p3-e" name="pergunta3e" min="1" max="5" value="3">
+              </div>
+            </div>
+          </div>
+
+          <div class="item-range">
+            <label for="p3-f">
+              Promover um <i>hackathon</i>*, criando soluções para um problema da comunidade.
+            </label>
+            <div class="legendas-range">
+              <div class="range-wrapper">
+                <div class="gradacao-range">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+                <input type="range" id="p3-f" name="pergunta3f" min="1" max="5" value="3">
+              </div>
+            </div>
+            <p style="margin-top:1em; font-size:.8em;">
+              * Evento que reúne programadores, designers e outros profissionais ligados ao desenvolvimento de software em maratonas de trabalho com o objetivo de criar soluções específicas para um desafio pré-definido.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- TELA 4 -->
+      <div class="tela-order quiz-wrap" id="tela4">
+
+        <div class="quiz-pergunta">
+          <h3>
+            <span>4</span>/10
+          </h3>
+          <div>
+            Ordene as ações seguintes, da mais prioritária para a menos urgente.
+            <p style="font-size: 1rem; font-weight: 400; color: #de1266; font-style: italic; margin-top: 10px; margin-bottom: 0">
+              Clique a arraste os elementos da direita para associá-los aos números que desejar.
+            </p>
+          </div>
+        </div>
+
+        <div class="quiz-order">
+          <ul id="sort-posicao">
+            <li>
+              1
+            </li>
+            <li>
+              2
+            </li>
+            <li>
+              3
+            </li>
+            <li>
+              4
+            </li>
+            <li>
+              5
+            </li>
+          </ul>
+          <ul id="sortable">
+            <li class="ui-state-default" id="p4-a">
+              <p>Diminuir o ritmo do aquecimento global.</p>
+              <i class="material-icons">
+                drag_indicator
+              </i>
+            </li>
+            <li class="ui-state-default" id="p4-b">
+              <p>Acabar com a fome e a miséria.</p>
+              <i class="material-icons">
+                drag_indicator
+              </i>
+            </li>
+            <li class="ui-state-default" id="p4-c">
+              <p>Acabar com a desigualdade, o machismo e o racismo.</p>
+              <i class="material-icons">
+                drag_indicator
+              </i>
+            </li>
+            <li class="ui-state-default" id="p4-d">
+              <p>Fortalecer a tecnologia e a inovação.</p>
+              <i class="material-icons">
+                drag_indicator
+              </i>
+            </li>
+            <li class="ui-state-default" id="p4-e">
+              <p>Garantir o acesso à saúde e à educação de qualidade.</p>
+              <i class="material-icons">
+                drag_indicator
+              </i>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+      <!-- TELA 5 -->
+      <div class="tela-radio quiz-wrap sem-avancar" id="tela5">
+        <div class="quiz-pergunta">
+          <h3>
+            <span>5</span>/10
+          </h3>
+          <div>
+            Qual das organizações seguintes você mais admira?
+          </div>
+        </div>
+        <div class="quiz-input">
+          <div class="item-radio">
+            <input type="radio" id="p5-a" name="pergunta5" value="a">
+            <label for="p5-a">Médicos Sem Fronteiras <a href="https://www.msf.org.br/" target="_blank">conhecer</a></label>
+          </div>
+          <div class="item-radio">
+            <input type="radio" id="p5-b" name="pergunta5" value="b">
+            <label for="p5-b">Greenpeace <a href="https://www.greenpeace.org/brasil/" target="_blank">conhecer</a></label>
+          </div>
+          <div class="item-radio">
+            <input type="radio" id="p5-c" name="pergunta5" value="c">
+            <label for="p5-c">Fundação Malala <a href="https://www.malala.org/" target="_blank">conhecer</a></label>
+          </div>
+          <div class="item-radio">
+            <input type="radio" id="p5-d" name="pergunta5" value="d">
+            <label for="p5-d">Teto <a href="https://www.techo.org/brasil/" target="_blank">conhecer</a></label>
+          </div>
+          <div class="item-radio">
+            <input type="radio" id="p5-e" name="pergunta5" value="e">
+            <label for="p5-e">Amigos do Bem <a href="https://www.amigosdobem.org/" target="_blank">conhecer</a></label>
+          </div>
+          <div class="item-radio">
+            <input type="radio" id="p5-f" name="pergunta5" value="f">
+            <label for="p5-f">Instituto Sou da Paz <a href="http://www.soudapaz.org/" target="_blank">conhecer</a></label>
+          </div>
+        </div>
+      </div>
+
+      <!-- TELA 6 -->
+      <div class="tela-radio quiz-wrap sem-avancar" id="tela6">
+        <div class="quiz-pergunta">
+          <h3>
+            <span>6</span>/10
+          </h3>
+          <div>
+            Qual das frases seguintes você prefere?
+          </div>
+        </div>
+        <div class="quiz-input">
+          <div class="item-radio">
+            <input type="radio" id="p6-a" name="pergunta6" value="a">
+            <label for="p6-a">“Cuide da sua saúde: seu corpo é sua primeira casa”.</label>
+          </div>
+          <div class="item-radio">
+            <input type="radio" id="p6-b" name="pergunta6" value="b">
+            <label for="p6-b">“A inovação é o que distingue um líder de um seguidor”.</label>
+          </div>
+          <div class="item-radio">
+            <input type="radio" id="p6-c" name="pergunta6" value="c">
+            <label for="p6-c">“A igualdade não gera guerras”.</label>
+          </div>
+          <div class="item-radio">
+            <input type="radio" id="p6-d" name="pergunta6" value="d">
+            <label for="p6-d">“Um livro, uma caneta, uma criança e um professor podem mudar o mundo”.</label>
+          </div>
+          <div class="item-radio">
+            <input type="radio" id="p6-e" name="pergunta6" value="e">
+            <label for="p6-e">“Só quando a última árvore tiver sido derrubada, o último rio tiver sido envenenado, o último peixe capturado é que vocês entenderão que não se pode comer o dinheiro”.</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- TELA 7 -->
+      <div class="tela-radio quiz-wrap sem-avancar" id="tela7">
+        <div class="quiz-pergunta">
+          <h3>
+            <span>7</span>/10
+          </h3>
+          <div>
+            Em que tipo de lugar você gostaria de trabalhar?
+          </div>
+        </div>
+        <div class="quiz-input">
+          <div class="item-radio">
+            <input type="radio" id="p7-a" name="pergunta7" value="a">
+            <label for="p7-a">Em uma empresa inovadora ou <i>startup</i></label>
+          </div>
+          <div class="item-radio">
+            <input type="radio" id="p7-b" name="pergunta7" value="b">
+            <label for="p7-b">Em uma escola ou universidade</label>
+          </div>
+          <div class="item-radio">
+            <input type="radio" id="p7-c" name="pergunta7" value="c">
+            <label for="p7-c">Em uma clínica ou hospital</label>
+          </div>
+          <div class="item-radio">
+            <input type="radio" id="p7-d" name="pergunta7" value="d">
+            <label for="p7-d">Em uma ONG</label>
+          </div>
+          <div class="item-radio">
+            <input type="radio" id="p7-e" name="pergunta7" value="e">
+            <label for="p7-e">Em uma reserva florestal</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- TELA 8 -->
+      <div class="tela-radio quiz-wrap sem-avancar" id="tela8">
+        <div class="quiz-pergunta">
+          <h3>
+            <span>8</span>/10
+          </h3>
+          <div>
+            Qual dos seguintes artigos científicos você gostaria de ter escrito?
+          </div>
+        </div>
+        <div class="quiz-input">
+          <div class="item-radio">
+            <input type="radio" id="p8-a" name="pergunta8" value="a">
+            <label for="p8-a">Direito à educação: direito à igualdade, direito à diferença</label>
+          </div>
+          <div class="item-radio">
+            <input type="radio" id="p8-b" name="pergunta8" value="b">
+            <label for="p8-b">Impactos na saúde das deficiências de acesso à água</label>
+          </div>
+          <div class="item-radio">
+            <input type="radio" id="p8-c" name="pergunta8" value="c">
+            <label for="p8-c">Aquecimento global e suas manifestações regionais e locais</label>
+          </div>
+          <div class="item-radio">
+            <input type="radio" id="p8-d" name="pergunta8" value="d">
+            <label for="p8-d">Facilitando a criação de conhecimento: reinventando a empresa com o poder da inovação contínua</label>
+          </div>
+          <div class="item-radio">
+            <input type="radio" id="p8-e" name="pergunta8" value="e">
+            <label for="p8-e">A dimensão da pobreza, da fome e da desnutrição no Brasil</label>
+          </div>
+          <div class="item-radio">
+            <input type="radio" id="p8-f" name="pergunta8" value="f">
+            <label for="p8-f">Direitos fundamentais nas relações de trabalho</label>
+          </div>
+          <div class="item-radio">
+            <input type="radio" id="p8-g" name="pergunta8" value="g">
+            <label for="p8-g">Parcerias, novos arranjos institucionais e políticas públicas no nível local de governo</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- TELA 9 -->
+      <div class="tela-opiniao quiz-wrap sem-avancar" id="tela9">
+        <div class="pergunta">
+          <h3>
+            <span>9</span>/10
+          </h3>
+          <p>
+            Você contribuiria com os seguintes abaixo-assinados?
+          </p>
+          <div>
+            <div></div>
+          </div>
+        </div>
+        <!-- legenda desktop -->
+        <div class="legenda-opiniao">
+          <div>
+            <div>
+              Sim
+            </div>
+            <div>
+              Não
+            </div>
+            <div>
+              Não sei
+            </div>
+          </div>
+        </div>
+        <!-- item a -->
+        <div class="item-opiniao">
+          <div class="pergunta-opiniao">
+            Para proibir o uso de canudos e copos plásticos descartáveis.
+          </div>
+          <div class="opcoes-opiniao">
+            <div>
+              <input type="radio" id="p9-a-sim" name="pergunta9a" value="sim">
+              <label for="p9-a-sim">Sim</label>
+            </div>
+            <div>
+              <input type="radio" id="p9-a-nao" name="pergunta9a" value="nao">
+              <label for="p9-a-nao">Não</label>
+            </div>
+            <div>
+              <input type="radio" id="p9-a-nsei" name="pergunta9a" value="nsei">
+              <label for="p9-a-nsei">Não sei</label>
+            </div>
+          </div>
+        </div>
+        <!-- item b -->
+        <div class="item-opiniao">
+          <div class="pergunta-opiniao">
+            Para que a licença-paternidade seja ampliada para no mínimo 1 mês.
+          </div>
+          <div class="opcoes-opiniao">
+            <div>
+              <input type="radio" id="p9-b-sim" name="pergunta9b" value="sim">
+              <label for="p9-b-sim">Sim</label>
+            </div>
+            <div>
+              <input type="radio" id="p9-b-nao" name="pergunta9b" value="nao">
+              <label for="p9-b-nao">Não</label>
+            </div>
+            <div>
+              <input type="radio" id="p9-b-nsei" name="pergunta9b" value="nsei">
+              <label for="p9-b-nsei">Não sei</label>
+            </div>
+          </div>
+        </div>
+        <!-- item c -->
+        <div class="item-opiniao">
+          <div class="pergunta-opiniao">
+            Para estabelecer uma renda mínima garantida a todas as pessoas do país.
+          </div>
+          <div class="opcoes-opiniao">
+            <div>
+              <input type="radio" id="p9-c-sim" name="pergunta9c" value="sim">
+              <label for="p9-c-sim">Sim</label>
+            </div>
+            <div>
+              <input type="radio" id="p9-c-nao" name="pergunta9c" value="nao">
+              <label for="p9-c-nao">Não</label>
+            </div>
+            <div>
+              <input type="radio" id="p9-c-nsei" name="pergunta9c" value="nsei">
+              <label for="p9-c-nsei">Não sei</label>
+            </div>
+          </div>
+        </div>
+        <!-- item d -->
+        <div class="item-opiniao">
+          <div class="pergunta-opiniao">
+            Para implementar nas escolas atividades ligadas a saúde e bem-estar, como nutrição, educação emocional e esporte.
+          </div>
+          <div class="opcoes-opiniao">
+            <div>
+              <input type="radio" id="p9-d-sim" name="pergunta9d" value="sim">
+              <label for="p9-d-sim">Sim</label>
+            </div>
+            <div>
+              <input type="radio" id="p9-d-nao" name="pergunta9d" value="nao">
+              <label for="p9-d-nao">Não</label>
+            </div>
+            <div>
+              <input type="radio" id="p9-d-nsei" name="pergunta9d" value="nsei">
+              <label for="p9-d-nsei">Não sei</label>
+            </div>
+          </div>
+        </div>
+        <!-- item e -->
+        <div class="item-opiniao">
+          <div class="pergunta-opiniao">
+            Para simplificar os processos de abertura de empresas e registro de patentes.
+          </div>
+          <div class="opcoes-opiniao">
+            <div>
+              <input type="radio" id="p9-e-sim" name="pergunta9e" value="sim">
+              <label for="p9-e-sim">Sim</label>
+            </div>
+            <div>
+              <input type="radio" id="p9-e-nao" name="pergunta9e" value="nao">
+              <label for="p9-e-nao">Não</label>
+            </div>
+            <div>
+              <input type="radio" id="p9-e-nsei" name="pergunta9e" value="nsei">
+              <label for="p9-e-nsei">Não sei</label>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+      <!-- TELA 10 -->
+      <div class="tela-radio quiz-wrap sem-avancar" id="tela10">
+        <div class="quiz-pergunta">
+          <h3>
+            <span>10</span>/10
+          </h3>
+          <div>
+            Selecione, na lista seguinte, os temas com os quais você mais se identifica:
+          </div>
+        </div>
+        <div class="quiz-input">
+          <div class="item-radio">
+            <input type="checkbox" id="p10-a" name="pergunta10" value="a">
+            <label for="p10-a">Meio ambiente</label>
+          </div>
+          <div class="item-radio">
+            <input type="checkbox" id="p10-b" name="pergunta10" value="b">
+            <label for="p10-b">Saúde</label>
+          </div>
+          <div class="item-radio">
+            <input type="checkbox" id="p10-c" name="pergunta10" value="c">
+            <label for="p10-c">Educação</label>
+          </div>
+          <div class="item-radio">
+            <input type="checkbox" id="p10-d" name="pergunta10" value="d">
+            <label for="p10-d">Tecnologia</label>
+          </div>
+          <div class="item-radio">
+            <input type="checkbox" id="p10-e" name="pergunta10" value="e">
+            <label for="p10-e">Direitos humanos</label>
+          </div>
+          <div class="item-radio">
+            <input type="checkbox" id="p10-f" name="pergunta10" value="f">
+            <label for="p10-f">Empreendedorismo</label>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- NAVEGAÇÃO -->
+      <div class="navegacao">
+        <button class="voltar">
+          <span class="bt-icone">
+            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.05 39.88">
+              <title>Untitled-2</title>
+              <polygon points="27.05 37.96 1.73 20.31 27.05 1.96 27.05 37.96" stroke-miterlimit="10" stroke-width="2" />
+            </svg>
+          </span>
+          <span class="bt-texto">
+            voltar
+          </span>
+        </button>
+        <button class="avancar">
+          <span class="bt-icone">
+            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.05 39.88">
+              <title>Untitled-2</title>
+              <polygon points="1 1.92 26.32 19.56 1 37.92 1 1.92" stroke-miterlimit="10" stroke-width="2" />
+            </svg>
+          </span>
+          <span class="bt-texto">
+            prosseguir
+          </span>
+        </button>
+          <button class="concluir botao-escondido">
+            <span class="bt-icone">
+              <i class="material-icons">
+                done
+              </i>
+            </span>
+            <span class="bt-texto">
+              concluir
+            </span>
+          </button>
+      </div>
+    </div>
+
+
+
+    <!-- TELA FEEDBACK -->
+    <div class="tela tela-feedback" id="telaC">
+      <div class="imagem">
+        <h3>
+        </h3>
+        <div class="ods-icon">
+          <a href="#textoOds1" class="iconOds1">
+            <img src="assets/ods-01.svg"  />
+          </a>
+          <a href="#textoOds2" class="iconOds2">
+            <img src="assets/ods-02.svg"  />
+          </a>
+          <a href="#textoOds3" class="iconOds3">
+            <img src="assets/ods-03.svg" />
+          </a>
+          <a href="#textoOds4" class="iconOds4">
+            <img src="assets/ods-04.svg" />
+          </a>
+          <a href="#textoOds5" class="iconOds5">
+            <img src="assets/ods-05.svg" />
+          </a>
+          <a href="#textoOds6" class="iconOds6">
+            <img src="assets/ods-06.svg" />
+          </a>
+          <a href="#textoOds7" class="iconOds7">
+            <img src="assets/ods-07.svg" />
+          </a>
+          <a href="#textoOds8" class="iconOds8">
+            <img src="assets/ods-08.svg" />
+          </a>
+          <a href="#textoOds9" class="iconOds9">
+            <img src="assets/ods-09.svg" />
+          </a>
+          <a href="#textoOds10" class="iconOds10">
+            <img src="assets/ods-10.svg" />
+          </a>
+          <a href="#textoOds11" class="iconOds11">
+            <img src="assets/ods-11.svg" />
+          </a>
+          <a href="#textoOds12" class="iconOds12">
+            <img src="assets/ods-12.svg" />
+          </a>
+          <a href="#textoOds13" class="iconOds13">
+            <img src="assets/ods-13.svg" />
+          </a>
+          <a href="#textoOds14" class="iconOds14">
+            <img src="assets/ods-14.svg" />
+          </a>
+          <a href="#textoOds14" class="iconOds15">
+            <img src="assets/ods-15.svg" />
+          </a>
+          <a href="#textoOds16" class="iconOds16">
+            <img src="assets/ods-16.svg" />
+          </a>
+          <a href="#textoOds17" class="iconOds17">
+            <img src="assets/ods-17.svg" />
+          </a>
+        </div>
+      </div>
+      <div class="conteudo">
+        <div class="texto">
+          <!-- TEXTO ODS1 -->
+          <div id="textoOds1">
+            <h4><span>1</span>Erradicação da pobreza</h4>
+            <p>
+              “Acabar com a pobreza em todas as suas formas, em todos os lugares”.
+            </p>
+            <p>
+              Assim está definido o ODS #1, que propõe erradicar a pobreza extrema, ou seja, das pessoas que vivem com menos de US$1,90 por dia, e reduzir à metade a proporção de pessoas que vivem na pobreza, em todas as suas dimensões.
+            </p>
+            <p>
+              Se você se identifica com este Objetivo, pode realizar algumas ações como, por exemplo:
+            </p>
+            <div class="exemplos">
+              <ul>
+                <li>Disponibilizar para a comunidade local ofertas de trabalho.</li>
+                <li>Disponibilizar serviços para a comunidade (saúde, documentos, previdência, bolsa-família etc.).</li>
+                <li>Realizar cursos de capacitação profissional e geração de renda.</li>
+                <li>Promover capacitações em organizações sociais e escolas públicas sobre a estruturação de cooperativas.</li>
+                <li>Realizar campanhas para arrecadar alimentos, livros e roupas.</li>
+              </ul>
+            </div>
+            <p>Para saber mais sobre o ODS #1, <a href="https://nacoesunidas.org/pos2015/ods1/" target="_blank">clique aqui</a>.</p>
+          </div>
+          <!-- TEXTO ODS2 -->
+          <div id="textoOds2">
+            <h4><span>2</span>Fome zero e agricultura sustentável</h4>
+            <p>“Acabar com a fome, alcançar a segurança alimentar e melhoria da nutrição e promover a agricultura sustentável”.</p>
+
+            <p>O ODS #2 visa acabar com a fome e garantir o acesso de todas as pessoas a alimentos seguros, nutritivos e suficientes, além de garantir sistemas sustentáveis de produção de alimentos e garantir acesso seguro e igual à terra,
+              especialmente por povos indígenas, agricultores familiares, pastores e pescadores.</p>
+
+            <p>Para contribuir com este Objetivo, você pode realizar ações como:</p>
+
+            <div class="exemplos">
+              <ul>
+                <li>Realizar visitas à comunidade e em escolas, orientando sobre o que é uma boa alimentação.</li>
+                <li>Trabalhar junto a organizações sociais e famílias, mostrando como aproveitar melhor os alimentos, evitando desperdícios.</li>
+                <li>Participar de programas de apoio à merenda escolar, incentivando a criação de hortas comunitárias e pomares.</li>
+
+              </ul>
+            </div>
+            <p>Para saber mais sobre o ODS #2, <a href="https://nacoesunidas.org/pos2015/ods2/" target="_blank">clique aqui</a>.</p>
+          </div>
+          <!-- TEXTO ODS3 -->
+          <div id="textoOds3">
+            <h4><span>3</span>Saúde e bem-estar</h4>
+            <p>“Assegurar uma vida saudável e promover o bem-estar para todas e todos, em todas as idades”.</p>
+
+            <p>Essa é a definição do ODS #3, que tem entre suas metas reduzir a mortalidade materna e infantil, reforçar a prevenção ao abuso de álcool e drogas entorpecentes e apoiar o desenvolvimento de vacinas e medicamentos.</p>
+
+            <p>Para ajudar no alcance deste Objetivo, você pode:</p>
+
+            <div class="exemplos">
+              <ul>
+                <li>Participar de programas de apoio à promoção de exercícios físicos em todas as idades.</li>
+                <li>Realizar ações de conscientização e prevenção ao consumo excessivo de álcool e tabaco.</li>
+                <li>Promover palestras e atividades sobre temas relacionados à saúde materna e infantil, como planejamento familiar, gravidez de risco, importância dos exames pré-natais e das vacinações do bebê, nutrição da mãe e do bebê,
+                  aleitamento materno, cuidado infantil e prevenção de acidentes domésticos.</li>
+                <li>Realizar orientação sobre os locais que prestam atendimento de saúde à mulher.</li>
+                <li>Mobilizar e informar sobre o combate à AIDS e outras doenças epidêmicas (malária, dengue, tuberculose, febre amarela) na universidade ou na comunidade.</li>
+                <li>Informar sobre saúde sexual e reprodutiva para jovens e adultos e prevenção a doenças sexualmente transmissíveis em organizações sociais e escolas públicas.</li>
+                <li>Promover palestras em escolas e organizações sociais sobre cuidados com a saúde física e mental, higiene e importância das vacinas.</li>
+                <li>Fazer levantamento dos serviços de saúde disponíveis, como remédios, postos de saúde, centros de atendimento, e divulgá-los na comunidade.</li>
+              </ul>
+            </div>
+            <p>Para saber mais sobre o ODS #3, <a href="https://nacoesunidas.org/pos2015/ods3/" target="_blank">clique aqui</a>.</p>
+          </div>
+          <!-- TEXTO ODS4 -->
+          <div id="textoOds4">
+            <h4><span>4</span>Educação de qualidade</h4>
+            <p>“Assegurar a educação inclusiva, equitativa e de qualidade, e promover oportunidades de aprendizagem ao longo da vida para todas e todos”.</p>
+
+            <p>O ODS #4 defende, portanto, a Educação. Estão entre suas metas aumentar o contingente de professores qualificados, garantir que todas as pessoas sejam alfabetizadas e tenham conhecimento básico de matemática, além de promover a
+              igualdade de acesso para mulheres, pessoas com deficiência, povos indígenas e crianças em situação de vulnerabilidade.</p>
+
+            <p>Algumas ações que você pode realizar no âmbito deste Objetivo são:</p>
+
+            <div class="exemplos">
+              <ul>
+                <li>
+                  Formar um grupo de voluntários para atuar junto às escolas públicas no reforço escolar, de acordo com as necessidades da escola.</li>
+
+                <li>
+                  Realizar pesquisas junto às escolas públicas para identificar os alunos que estão faltando muito às aulas e traçar uma estratégia para incentivá-los a voltar a frequentar a escola.</li>
+
+                <li>
+                  Organizar bibliotecas, videotecas ou brinquedotecas na comunidade, em escolas ou organizações sociais.</li>
+
+                <li>
+                  Fazer um levantamento dos analfabetos de um bairro e incentivá-los a frequentar um curso de alfabetização.</li>
+
+                <li>
+                  Organizar atividades recreativas e esportivas, que também são educativas. Disciplina, respeito e cooperação podem ser reforçados nesses momentos.</li>
+
+                <li>
+                  É possível utilizar metodologias como a EaD para formar grupos de estudos com pessoas que não tenham concluído o ensino fundamental ou médio.</li>
+
+                <li>
+                  Realizar oficinas de produção textual, concursos de redação e outras atividades de estímulo à leitura em escolas próximas da faculdade.</li>
+
+                <li>
+                  Promover cursos, palestras e ciclos de debate sobre temas culturais.</li>
+
+
+              </ul>
+            </div>
+            <p>Para saber mais sobre o ODS #4, <a href="https://nacoesunidas.org/pos2015/ods4/" target="_blank">clique aqui</a>.</p>
+          </div>
+          <!-- TEXTO ODS5 -->
+          <div id="textoOds5">
+            <h4><span>5</span>Igualdade de gênero</h4>
+            <p>“Alcançar a igualdade de gênero e empoderar todas as mulheres e meninas”.</p>
+
+            <p>O ODS #5 defende o fim de todas as formas de discriminação contra mulheres e meninas. Isso inclui o combate à exploração sexual e ao casamento prematuro, por exemplo, além de promover a igualdade de oportunidades para a liderança e o
+              acesso universal à saúde sexual e reprodutiva e aos direitos reprodutivos.</p>
+
+            <p>Para contribuir com este Objetivo, você pode:</p>
+
+            <div class="exemplos">
+              <ul>
+                <li>
+                  Identificar e divulgar novas oportunidades de trabalho para mulheres em atividades consideradas masculinas.</li>
+
+                <li>
+                  Promover ações na comunidade e em organizações sociais que estimulem as mulheres a buscar alternativas de geração de renda.</li>
+
+                <li>
+                  Divulgar na universidade e na comunidade que existem, nas grandes cidades, centros de atendimento para mulheres, onde elas podem denunciar a violência doméstica e terem acompanhamento físico e psicológico.</li>
+
+                <li>
+                  Promover palestras sobre empreendedorismo e trabalho cooperativo para grupos de mulheres.</li>
+
+
+              </ul>
+            </div>
+            <p>Para saber mais sobre o ODS #5, <a href="https://nacoesunidas.org/pos2015/ods5/" target="_blank">clique aqui</a>.</p>
+          </div>
+          <!-- TEXTO ODS6 -->
+          <div id="textoOds6">
+            <h4><span>6</span>Água potável e saneamento</h4>
+            <p>“Assegurar a disponibilidade e gestão sustentável da água e saneamento para todas e todos”.</p>
+
+            <p>Até 2030, o ODS #6 visa alcançar o acesso universal e equitativo à água potável e segura para todos, bem como acesso a saneamento e higiene adequados. Além disso, também pretende proteger e restaurar ecossistemas relacionados com a
+              água.</p>
+
+            <p>Algumas ações relacionadas a este Objetivo são:</p>
+
+            <div class="exemplos">
+              <ul>
+                <li>Desenvolver material explicativo, palestras e campanhas sobre o consumo consciente e racional de água.</li>
+                <li>Criar eventos, como gincanas e corridas, a fim de conscientizar sobre a importância do consumo consciente e do desenvolvimento sustentável para uma melhor qualidade de vida. Aproveitar o momento para organizar rodas de conversa
+                  ou pequenas palestras sobre o tema.</li>
+              </ul>
+            </div>
+            <p>Para saber mais sobre o ODS #6, <a href="https://nacoesunidas.org/pos2015/ods6/" target="_blank">clique aqui</a>.</p>
+          </div>
+          <!-- TEXTO ODS7 -->
+          <div id="textoOds7">
+            <h4><span>7</span>Energia limpa e acessível</h4>
+            <p>“Assegurar o acesso confiável, sustentável, moderno e a preço acessível à energia para todas e todos”.</p>
+
+            <p>O ODS #7 visa assegurar o acesso universal, confiável, moderno e a preços acessíveis a serviços de energia, aumentando a participação de energias renováveis na matriz energética global.</p>
+
+            <p>Para contribuir com este Objetivo, você pode:</p>
+
+            <div class="exemplos">
+              <ul>
+                <li>Desenvolver material explicativo, palestras e campanhas sobre o consumo consciente e o uso racional de energia.</li>
+                <li>Implantar sistemas que incentivem o uso de recursos limpos e renováveis, por exemplo de aquecimento solar e captação da água da chuva.</li>
+                <li>Conscientizar sobre o uso de combustíveis fósseis, promovendo campanhas para o uso da bicicleta, por exemplo.</li>
+
+              </ul>
+            </div>
+            <p>Para saber mais sobre o ODS #7, <a href="https://nacoesunidas.org/pos2015/ods7/" target="_blank">clique aqui</a>.</p>
+          </div>
+          <!-- TEXTO ODS8 -->
+          <div id="textoOds8">
+            <h4><span>8</span>Trabalho decente e crescimento econômico</h4>
+            <p>“Promover o crescimento econômico sustentado, inclusivo e sustentável, emprego pleno e produtivo e trabalho decente para todas e todos”.</p>
+
+            <p>Assim é definido o ODS #8, voltado à promoção de políticas que apoiem atividades produtivas, geração de emprego decente e empreendedorismo, incentivando a formalização e o crescimento das micro, pequenas e médias empresas.</p>
+
+            <p>Para contribuir com este Objetivo, você pode:</p>
+
+            <div class="exemplos">
+              <ul>
+                <li>Desenvolver material explicativo, palestras e campanhas sobre empreendedorismo e gestão de finanças.</li>
+                <li>Disponibilizar para a comunidade local ofertas de trabalho.</li>
+                <li>Promover orientações para micro e pequenos empresários da comunidade acerca de gestão de negócios e formalização da empresa.</li>
+
+              </ul>
+            </div>
+            <p>Para saber mais sobre o ODS #8, <a href="https://nacoesunidas.org/pos2015/ods8/" target="_blank">clique aqui</a>.</p>
+          </div>
+          <!-- TEXTO ODS9 -->
+          <div id="textoOds9">
+            <h4><span>9</span>Indústria, inovação e infraestrutura</h4>
+            <p>“Construir infraestruturas resilientes, promover a industrialização inclusiva e sustentável e fomentar a inovação”.</p>
+
+            <p>O ODS #9 busca desenvolver uma infraestrutura de qualidade, promover a industrialização inclusiva e sustentável e aumentar o acesso das pequenas indústrias aos serviços financeiros. Além disso, também inclui fortalecer a pesquisa
+              científica e melhorar a capacidade tecnológica dos setores industriais.</p>
+
+            <p>No âmbito deste Objetivo, você pode realizar ações como:</p>
+
+            <div class="exemplos">
+              <ul>
+                <li>Arrecadar materiais por meio de parcerias e reformar uma escola ou espaço da comunidade, por exemplo fazendo pintura, jardinagem etc.</li>
+                <li>Promover eventos e palestras para divulgar ideias e práticas inovadoras da comunidade (startups, trabalhos científicos etc.).</li>
+                <li>Promover um hackathon*, criando soluções para um problema da comunidade.<br />
+                  <span style="font-size: .85rem;">* Evento que reúne programadores, designers e outros profissionais ligados ao desenvolvimento de software em maratonas de trabalho com o objetivo de criar soluções específicas para um desafio
+                    pré-definido.</span></li>
+
+              </ul>
+            </div>
+            <p>Para saber mais sobre o ODS #9, <a href="https://nacoesunidas.org/pos2015/ods9/" target="_blank">clique aqui</a>.</p>
+          </div>
+          <!-- TEXTO ODS10 -->
+          <div id="textoOds10">
+            <h4><span>10</span>Redução das desigualdades</h4>
+            <p>“Reduzir a desigualdade dentro dos países e entre eles”.</p>
+
+            <p>Empoderar e promover a inclusão social, econômica e política de todos, independentemente de idade, gênero, deficiência, raça, etnia, origem, religião, condição econômica ou qualquer outra: esse é o ODS #10, que visa garantir a
+              igualdade de oportunidades.</p>
+
+            <p>Para contribuir com este Objetivo, você pode:</p>
+
+            <div class="exemplos">
+              <ul>
+                <li>Promover ações para tornar espaços e serviços da comunidade acessíveis a pessoas com deficiência ou mobilidade reduzida.</li>
+                <li>Organizar aulas de português para refugiados e promover eventos para integrá-los à comunidade.</li>
+                <li>Promover uma feira cultural com representantes de vários povos e religiões, buscando quebrar preconceitos (por exemplo, em relação a religiões afro-brasileiras).</li>
+
+              </ul>
+            </div>
+            <p>Para saber mais sobre o ODS #10, <a href="https://nacoesunidas.org/pos2015/ods10/" target="_blank">clique aqui</a>.</p>
+          </div>
+          <!-- TEXTO ODS11 -->
+          <div id="textoOds11">
+            <h4><span>11</span>Cidades e comunidades sustentáveis</h4>
+            <p>“Tornar as cidades e os assentamentos humanos inclusivos, seguros, resilientes e sustentáveis”.</p>
+
+            <p>O ODS #11 busca aumentar a urbanização inclusiva e sustentável, garantindo o acesso de todos à habitação e a sistemas de transporte seguros, adequados e acessíveis, além de proteger o patrimônio cultural e natural do mundo.</p>
+
+            <p>No âmbito deste Objetivo, você pode realizar ações como:</p>
+
+            <div class="exemplos">
+              <ul>
+                <li>Arrecadar materiais por meio de parcerias e reformar moradias precárias da comunidade.</li>
+                <li>Promover eventos e palestras de educação para o trânsito, visando diminuir acidentes e conscientizar as pessoas quanto à importância do transporte compartilhado.</li>
+                <li>Realizar ações de divulgação e preservação de patrimônios culturais e naturais da comunidade.</li>
+                <li>Realizar mutirões de limpeza, plantação de árvores e flores em praças do bairro.</li>
+
+              </ul>
+            </div>
+            <p>Para saber mais sobre o ODS #11, <a href="https://nacoesunidas.org/pos2015/ods11/" target="_blank">clique aqui</a>.</p>
+          </div>
+          <!-- TEXTO ODS12 -->
+          <div id="textoOds12">
+            <h4><span>12</span>Consumo e produção responsáveis</h4>
+            <p>“Assegurar padrões de produção e de consumo sustentáveis”.</p>
+
+            <p>Este ODS busca alcançar a gestão sustentável e o uso eficiente dos recursos naturais, reduzindo o desperdício de alimentos e a geração de resíduos por meio da prevenção, redução, reciclagem e reúso, além de incentivar a compra
+              sustentável.</p>
+
+            <p>Para contribuir com este Objetivo, você pode, por exemplo:</p>
+
+            <div class="exemplos">
+              <ul>
+                <li>Promover uma campanha de descarte correto de materiais eletroeletrônicos e de informática.</li>
+                <li>Desenvolver material explicativo, palestras e campanhas sobre o consumo consciente e a pegada ecológica.</li>
+                <li>Implementar a coleta seletiva na faculdade, doando o que for arrecadado para reciclagem.</li>
+                <li>Realizar um bazar solidário com troca de roupas, livros e objetos, conscientizando as pessoas sobre consumo sustentável.</li>
+                <li>Organizar oficinas de artesanato com materiais recicláveis.</li>
+
+              </ul>
+            </div>
+            <p>Para saber mais sobre o ODS #12, <a href="https://nacoesunidas.org/pos2015/ods12/" target="_blank">clique aqui</a>.</p>
+          </div>
+          <!-- TEXTO ODS13 -->
+          <div id="textoOds13">
+            <h4><span>13</span>Ação contra a mudança global do clima</h4>
+            <p>“Tomar medidas urgentes para combater a mudança climática e seus impactos”.</p>
+            <p>O ODS #13 visa reforçar a capacidade de adaptação a riscos relacionados ao clima e às catástrofes naturais em todos os países, além de melhorar a educação e aumentar a conscientização sobre o tema.</p>
+            <p>Para ajudar esta causa, você pode realizar ações como:</p>
+
+            <div class="exemplos">
+              <ul>
+                <li>Promover campanhas de incentivo ao transporte público ou privado não poluente (como a bicicleta).</li>
+                <li>Desenvolver material explicativo, palestras e campanhas sobre o consumo consciente e a pegada ecológica.</li>
+                <li>Implementar a coleta seletiva na faculdade, doando o que for arrecadado para reciclagem. </li>
+                <li>Promover campanhas de conscientização quanto ao uso de plástico, sugerindo alternativas eficientes.</li>
+                <li>Divulgar a campanha “segunda sem carne”, explicando o impacto da pecuária para o meio ambiente e o planeta.</li>
+                <li>Presentear os calouros com canecas reutilizáveis, visando reduzir o uso de copos descartáveis.</li>
+
+              </ul>
+            </div>
+            <p>Para saber mais sobre o ODS #13, <a href="https://nacoesunidas.org/pos2015/ods13/" target="_blank">clique aqui</a>.</p>
+          </div>
+          <!-- TEXTO ODS14 e 15 -->
+          <div id="textoOds14">
+            <h4><span>14</span>Vida na água</h4>
+            <h4 style="color:#56c02b"><span>15</span>Vida terrestre</h4>
+            <p>“Conservação e uso sustentável dos oceanos, dos mares e dos recursos marinhos para o desenvolvimento sustentável”.</p>
+
+            <p>O ODS #14 refere-se a prevenir e reduzir significativamente a poluição marinha, proteger os ecossistemas marinhos, regular a coleta e acabar com a pesca ilegal.</p>
+
+            <p>O ODS #15, por sua vez, defende a vida terrestre.</p>
+
+            <p><strong>“Proteger, recuperar e promover o uso sustentável dos ecossistemas terrestres, gerir de forma sustentável as florestas, combater a desertificação, deter e reverter a degradação da terra e deter a perda de biodiversidade”.</strong></p>
+
+            <p>Este Objetivo, portanto, busca assegurar a conservação e a recuperação de ecossistemas terrestres e de água doce, como as florestas e montanhas.</p>
+
+            <p>Ambos os ODS tratam de preservação ambiental e da vida animal; dependendo da região na qual você se encontra, pode realizar ações como, por exemplo:</p>
+
+            <div class="exemplos">
+              <ul>
+                <li>Mutirão de limpeza na praia.</li>
+                <li>Coleta e triagem de resíduos encontrados na mata.
+                  Voluntariado em reservas e organizações dedicadas à preservação dos ecossistemas.</li>
+                <li>Promover campanhas de conscientização quanto ao uso de plástico e seu impacto para o oceano, sugerindo alternativas eficientes.</li>
+                <li>Promover campanhas, eventos e palestras de educação ambiental.</li>
+                <li>Alguns zoológicos realizam ações importantes de educação ambiental e preservação. Se for o caso do zoo de sua cidade, é interessante divulgar esse trabalho para a comunidade.</li>
+
+              </ul>
+            </div>
+            <p>Para saber mais sobre o ODS #14, <a href="https://nacoesunidas.org/pos2015/ods14/" target="_blank">clique aqui</a>.</p>
+            <p>Sobre o ODS #15, <a href="https://nacoesunidas.org/pos2015/ods15/" target="_blank">clique aqui</a>.</p>
+          </div>
+
+          <!-- TEXTO ODS16 -->
+          <div id="textoOds16">
+            <h4><span>16</span>Paz, justiça e instituições eficazes</h4>
+            <p>“Promover sociedades pacíficas e inclusivas para o desenvolvimento sustentável, proporcionar o acesso à justiça para todos e construir instituições eficazes, responsáveis e inclusivas em todos os níveis”.</p>
+
+            <p>O ODS #16 busca promover o Estado de Direito e garantir a igualdade de acesso à justiça para todos. Visa lutar contra a corrupção e todas as formas de tortura e violência, além de proteger as liberdades fundamentais.</p>
+
+            <p>Para contribuir com este Objetivo, você pode:</p>
+
+            <div class="exemplos">
+              <ul>
+                <li>Promover campanhas, eventos e materiais sobre a importância da democracia, do voto consciente e da fiscalização permanente dos representantes eleitos.</li>
+                <li>Organizar uma consultoria jurídica para a comunidade, orientando as pessoas sobre questões como pensão alimentícia, divórcio e direitos do trabalhador e do consumidor.</li>
+                <li>Organizar campanhas e programas de valorização da vida e defesa de direitos.</li>
+
+              </ul>
+            </div>
+            <p>Para saber mais sobre o ODS #16, <a href="https://nacoesunidas.org/pos2015/ods16/" target="_blank">clique aqui</a>.</p>
+          </div>
+          <!-- TEXTO ODS17 -->
+          <div id="textoOds17">
+            <h4><span>17</span>Parcerias e meios de implementação</h4>
+            <p>“Fortalecer os meios de implementação e revitalizar a parceria global para o desenvolvimento sustentável”.</p>
+
+            <p>O ODS #17 trata de colaboração, destacando o apoio internacional aos países em desenvolvimento e a formação de parcerias multissetoriais, públicas, público-privadas e com a sociedade civil.</p>
+
+            <p>Você pode contribuir com este Objetivo realizando ações como:</p>
+
+            <div class="exemplos">
+              <ul>
+                <li>Mobilizar outros universitários para que participem desse movimento.</li>
+                <li>Realizar palestras de incentivo ao voluntariado na própria faculdade, em escolas e comunidade.</li>
+                <li>Buscar parcerias com outras instituições, comércios e empresas da região, de modo a viabilizar as ações planejadas e promover a colaboração.</li>
+
+              </ul>
+            </div>
+            <p>Para saber mais sobre o ODS #17, <a href="https://nacoesunidas.org/pos2015/ods17/" target="_blank">clique aqui</a>.</p>
+          </div>
+
+
+          <button class="botao">prosseguir</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- TELA FINAL -->
+    <div class="tela tela-intro" id="telaD">
+      <div class="imagem">
+        <img src="assets/leao.png" />
+      </div>
+      <div class="conteudo">
+        <div class="texto">
+          <p style="color: #de1266; font-size:1.2rem;font-weight: 700">
+            E aí? Ficou inspirado?
+          </p>
+          <p>
+            Esse teste foi elaborado para ajudá-lo a se conhecer melhor e a descobrir ações possíveis para o seu trote solidário.
+          </p>
+          <p>
+            Se você quiser saber também sobre outros tipos de trote, relacionados a outros Objetivos de Desenvolvimento Sustentável, clique aqui.
+          </p>
+          <p>
+            Para conhecer casos reais de trotes que obtiveram bons resultados, <a href="https://apps.univesp.br/trote-cidadao-paulista/trote-que-deu-certo/#secao-3" target="_blank">clique aqui</a>.
+          </p>
+          <p>
+            <strong>Bom trabalho!</strong>
+          </p>
+
+        </div>
+      </div>
+
+    </div>
+
+
+  </main>
+
+  <!-- Rodapé -->
+
+  <!-- Fim do rodapé -->
+
+  <!-- Fim da div .esconder-tela-pequena
+  Utilizar essa div caso o REA não se adapte a todos os formatos de tela -->
+  <!-- </div> -->
+
+  <!-- AVISO =+960px -->
+  <!-- Utilizar caso o REA possua limitações quanto aos tamanhos de tela
+  Caso contrário, deletar -->
+  <!-- <div class= "container d-lg-none text-center">
+    <div class="container">
+      <a href="https://univesp.br/" target="_blank">
+        <img src="https://apps.univesp.br/common/logo-univesp-positivo.svg" alt="Logo da Univesp" height="47px" width="135px" class='img-responsive center-block' style="margin-top:4rem">
+      </a>
+    </div>
+    <img src='https://apps.univesp.br/common/aviso-tela.gif' alt="Computador Animado" height="117px" width="160px" class='img-responsive center-block' style="margin-top:3rem">
+    <div style="margin-top:.5rem">
+      <p>
+        <font style=font-family:"Barlow" color="#3b78d1" 'text-center' size="10rem"><b>OPS!</b></font>
+      </p>
+      <p>
+        <font style=font-family:"Verdana" "text-center" size="3rem">Visualize este recurso em um computador, em janela com largura mínima de 992px.</font>
+      </p>
+    </div>
+  </div> -->
+
+  <!-- Créditos -->
+  <div class="modal fade" id="creditos" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+
+          <h6>Governo do Estado de São Paulo</h6>
+          <p>Secretaria de Desenvolvimento Econômico</p>
+
+          <h6>UNIVERSIDADE VIRTUAL DO ESTADO DE SÃO PAULO – UNIVESP</h6>
+          <p><span class="funcao">Presidente</span>Rodolfo Jardim de Azevedo</p>
+          <p><span class="funcao">Diretora Acadêmica</span>Simone Telles Martins Ramos</p>
+
+          <h6>Equipe</h6>
+          <p><span class="funcao">Coordenação</span>Édison Trombeta</p>
+          <p><span class="funcao">Roteirização e Design Instrucional</span>Cida Azevedo</p>
+          <p><span class="funcao">Layout</span>Natasha Higa</p>
+          <p><span class="funcao">Programação</span>Alberto Ortiz e William Kimura</p>
+          <!-- <p><span class="funcao">Revisão</span>Fulano de Tal, Ciclano de Tal</p> -->
+
+        </div>
+        <div class="modal-footer">
+          <p>Janeiro/2019</p>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Arquivos Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://apps.univesp.br/common/jquery-ui-touch-punch.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+  <!-- jsSocials -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.min.js"></script>
+  <script>
+    var share = $("#share-buttons");
+    var page_title = $(document).attr('title');
+    var page_url = window.location.href;
+    share.jsSocials({
+      shares: [{
+          share: "facebook",
+          label: "Facebook",
+          logo: "fab fa-facebook-f",
+        },
+        {
+          share: "twitter",
+          label: "Twitter",
+          logo: "fab fa-twitter",
+        },
+        {
+          share: "whatsapp",
+          label: "Whatsapp",
+          logo: "fab fa-whatsapp",
+        },
+      ],
+      url: page_url,
+      text: 'Confira o REA ' + page_title + '.',
+      showLabel: true,
+      showCount: false,
+      shareIn: "popup",
+    });
+  </script>
+
+
+  <!-- Custom JS -->
+  <script type="text/javascript" src="javascripts/events.js"></script>
+  <script type="text/javascript" src="javascripts/calculo.js"></script>
+
+  <!-- MathJax. Descomente se for utilizar. Caso contrário, remova. -->
+  <!-- <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script> -->
+
+  <!-- Analytics. Remova em caso de reutilização do REA -->
+  <script src="https://apps.univesp.br/common/analytics.js"></script>
+
+</body>
+
+</html>

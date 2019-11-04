@@ -1,0 +1,82 @@
+.tela {  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  display: block;
+  max-width: 70%;
+  font-family: "Bree Serif", serif;
+  font-size: 2rem;
+  color: #de1266;
+}
+
+.todas-ods {
+  background-color: #F5F5F5;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card-ods {
+  flex-basis: 720px;
+  background-color: white;
+  margin: 15px;
+  display: flex;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.card-ods>div:first-child {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+}
+.card-ods>div:first-child>div {
+  flex-grow: 1
+}
+.card-ods img {
+  width: 200px;
+}
+.exemplos {
+  padding: 2rem;
+  background-color: white;
+}
+.exemplos p:last-child {
+  margin-bottom: 0
+}
+
+@media (max-width: 575.98px) {
+  .card-ods {
+    flex-direction: column;
+  }
+  .card-ods>div:first-child {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .card-ods>div:first-child>div {
+    flex-grow: 1;
+    margin-top:  -1rem;
+    display: flex;
+    justify-content: center;
+  }
+ }
+
+/* ODS COLORS */
+.ods-1-bg { background-color: #e5243b }
+.ods-2-bg { background-color: #dda63a }
+.ods-3-bg { background-color: #4c9f38 }
+.ods-4-bg { background-color: #c5192d }
+.ods-5-bg { background-color: #ff3a21 }
+.ods-6-bg { background-color: #26bde2 }
+.ods-7-bg { background-color: #fcc30b }
+.ods-8-bg { background-color: #a21942 }
+.ods-9-bg { background-color: #fd6925 }
+.ods-10-bg { background-color: #dd1367 }
+.ods-11-bg { background-color: #fd9d24 }
+.ods-12-bg { background-color: #bf8b2e }
+.ods-13-bg { background-color: #3f7e44 }
+.ods-14-bg { background-color: #0a97d9 }
+.ods-15-bg { background-color: #56c02b }
+.ods-16-bg { background-color: #00689d }
+.ods-17-bg { background-color: #19486a }
+.ods-0-bg { background-color: #242e36 }
