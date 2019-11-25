@@ -1,22 +1,49 @@
-.tela {  
+main {
+  padding: 0;
+  background-color: #F5F5F5;
+}
+.tela {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
+.logo {
+  width: 120px;
+  flex-shrink: 0;
+  margin-top: 15px;
+}
+.header {
+  width: 1470px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 2rem;
+}
 h2 {
   display: block;
-  max-width: 70%;
   font-family: "Bree Serif", serif;
-  font-size: 2rem;
+  font-size: 3rem;
   color: #de1266;
+  margin: 0;
+}
+h3 {
+  font-family: "Bree Serif", serif;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  display: none;
+}
+
+ul {
+  padding-left: 25px;
+  margin: 0;
 }
 
 .todas-ods {
-  background-color: #F5F5F5;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
 }
 
 .card-ods {
@@ -38,27 +65,122 @@ h2 {
   width: 200px;
 }
 .exemplos {
-  padding: 2rem;
   background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-.exemplos p:last-child {
+.exemplos div:first-of-type{
+  padding: 2rem 2rem 1rem 2rem;
+}
+.exemplos div:nth-of-type(2) {
+  padding: 1rem 2rem;
+  background-color: #f5f5f5;
+  color: #242e36;
+}
+.exemplos p {
   margin-bottom: 0
+}
+
+
+
+
+@media (max-width: 1546px) {
+  .header {
+    width: 1230px;
+  }
+  .card-ods {
+    flex-basis: 600px;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  .logo {
+    margin-left: 40px;
+  }
+}
+
+@media (max-width: 1305px) {
+  .header {
+    width: 750px;
+  }
+  .card-ods {
+    flex-basis: 750px;
+  }
+
+}
+
+@media (max-width: 780px) {
+  .header {
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 
 @media (max-width: 575.98px) {
   .card-ods {
     flex-direction: column;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
   }
   .card-ods>div:first-child {
     flex-direction: row;
     justify-content: center;
   }
   .card-ods>div:first-child>div {
-    flex-grow: 1;
-    margin-top:  -1rem;
+    height: 100%;
+    margin-top: -1rem;
     display: flex;
     justify-content: center;
+    max-width: 50%;
   }
+  .card-ods>div:first-child>div img {
+    width: 100%;
+  }
+  .header {
+    flex-direction: column;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  h2 {
+    font-size: 2rem;
+    order: 2;
+  }
+  .logo {
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+  .exemplos div:first-of-type{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+ }
+
+ /*CSS para impressão*/
+ @media print {
+   h3 {
+     display: block;
+   }
+   .card-ods>div:first-child {
+     display: none;
+   }
+   .exemplos div:nth-of-type(2) {
+     display: none;
+   }
+   .todas-ods {
+     width: 100%;
+   }
+   .card-ods {
+     width: 100%;
+     flex-basis: 720px;
+     background-color: white;
+     margin: 15px;
+     display: flex;
+     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+   }
+
  }
 
 /* ODS COLORS */

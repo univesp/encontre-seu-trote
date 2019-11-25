@@ -163,7 +163,7 @@ h3 span {
   width: 90%;
 }
 #telaD .imagem img {
-  width: 70%;
+  width: 75%;
 }
 .tela-intro .conteudo, .tela-feedback .conteudo {
   position: relative;
@@ -188,6 +188,10 @@ h3 span {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+}
+.tela-feedback .conteudo .texto {
+  padding-bottom: 2em;
+
 }
 
 .botao {
@@ -257,19 +261,15 @@ h3 span {
   padding: 1.5em 2em 1.5em 3em;
 }
 .item-radio {
-  text-indent: -20px;
+  /* text-indent: -20px; */
 }
 .item-radio:not(:last-of-type){
   margin-bottom: .5rem;
 }
-.item-radio input {
-  margin-right: 21px;
-  margin-left: -20px;
-  cursor: pointer;
-}
 .item-radio label {
   display: inline;
   cursor: pointer;
+  position: relative;
 }
 .item-radio a {
   font-size: .8em;
@@ -324,6 +324,7 @@ h3 span {
   max-width: 100%;
   display: flex;
   justify-content: flex-end;
+  font-weight: 700;
 }
 .pergunta-opiniao {
 }
@@ -333,7 +334,7 @@ h3 span {
   flex-shrink: 0;
   flex-basis: 30%;
 }
-.opcoes-opiniao div, .legenda-opiniao>div>div  {
+.opcoes-opiniao>div, .legenda-opiniao>div>div  {
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -341,13 +342,124 @@ h3 span {
   color: #de1266;
   text-transform: uppercase;
 }
-.opcoes-opiniao input {
-  display: block;
-  cursor: pointer;
-}
+
 .opcoes-opiniao label {
+  display: block;
+  position: relative;
+}
+.item-opiniao .rotulo {
   display: none;
 }
+/* Esconde a caixa de radio padrão */
+.opcoes-opiniao input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.item-radio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* cria a caixa de check */
+.item-opiniao .checkmark {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  background-color: #fff;
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+  border: 1px solid #de1266;
+  cursor: pointer;
+}
+.item-radio .checkmark {
+  top: 2px;
+  left: -40px;
+  position: absolute;
+  background-color: #fff;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  border: 1px solid #de1266;
+  cursor: pointer;
+}
+.item-radio .checkmark.checkbox {
+  border-radius: 0;
+}
+
+/* Cria o indicador */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Mostra o indicador quando selecionado */
+/* .opcoes-opiniao input[type="radio"]:checked+label .checkmark:after {
+  display: block;
+} */
+input[type="radio"]:checked+label .checkmark:after {
+  display: block;
+}
+input[type="checkbox"]:checked+label .checkmark:after {
+  display: block;
+}
+
+/* Estilo do indicador */
+.opcoes-opiniao input[type="radio"]:checked+label .checkmark:after {
+  left: 2px;
+  top: 2px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #de1266;
+}
+.item-radio input[type="radio"]:checked+label .checkmark:after {
+  left: 2px;
+  top: 2px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #de1266;
+}
+.item-radio input[type="checkbox"]:checked+label .checkmark:after {
+  left: 2px;
+  top: 2px;
+  width: 12px;
+  height: 12px;
+  border-radius: 0;
+  background: #de1266;
+}
+/* Hover do indicador */
+.opcoes-opiniao>div:hover .checkmark:after {
+  display: block;
+  left: 3px;
+  top: 3px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #f7a1a8;
+}
+.item-radio:hover .checkmark:after {
+  display: block;
+  left: 3px;
+  top: 3px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #f7a1a8;
+}
+.item-radio:hover .checkmark.checkbox:after {
+  border-radius: 0;
+}
+
 
 /* RANGE */
 .tela-range.quiz-wrap, .tela-order.quiz-wrap {
@@ -467,6 +579,7 @@ input[type=range] {
         #de1266 0%, #de1266 50%,
         transparent 15%, transparent 100%);
     width: 100%;
+    cursor: pointer;
 }
 
 input[type="range"]::-moz-range-track {
@@ -487,6 +600,7 @@ input[type=range]::-webkit-slider-thumb {
     border: 2px solid #fff;
     cursor: pointer;
     box-shadow: 0 0 0 1px #de1266;
+    transition: .2s;
 }
 input[type=range]::-moz-range-thumb {
     -moz-appearance: none !important;
@@ -497,6 +611,10 @@ input[type=range]::-moz-range-thumb {
     border: 2px solid #fff;
     cursor: pointer;
     box-shadow: 0 0 0 1px #de1266;
+}
+input[type=range]::-webkit-slider-thumb:hover {
+  transform: scale(1.15);
+  box-shadow: 0 0 0 1px #de1266, 1px 2px rgba(0,0,0,.4);
 }
 
 /* ORDER */
@@ -638,11 +756,23 @@ input[type=range]::-moz-range-thumb {
 }
 
 /* TELA FEEDBACK */
-.tela-feedback .texto>div:not(:first-of-type) {
+/* $('ul').find('li:visible:first').css('background','blue'); */
+
+
+.tela-feedback .texto>div {
 margin-top: 2rem;
 border-top: 2px dotted #242e36;
 padding-top: 2rem;
 }
+.tela-feedback .texto div.selecionado {
+  background-color: red;
+}
+.tela-feedback .texto>div.primeiro-texto {
+  border-top: 0;
+  margin-top: 0;
+  padding-top: 0;
+}
+
 .tela-feedback .texto>div p:first-of-type {
   font-weight: 700;
 }

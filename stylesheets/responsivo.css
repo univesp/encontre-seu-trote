@@ -83,6 +83,8 @@
   .tela-intro>div {
 
   }
+
+
   .tela-intro .imagem {
     width: 100%;
     padding: 15px;
@@ -90,10 +92,26 @@
     position: static;
     height: auto;
   }
+  #telaD .imagem {
+    width: 100%;
+    padding: 30px 15px 15px 15px;
+    display: block;
+    position: static;
+    height: 220px;
+    overflow: hidden;
+    margin-bottom: 2em;
+  }
   .tela-intro .imagem img {
     display: block;
     width: auto;
     height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #telaD .imagem img {
+    display: block;
+    width: auto;
+    height: 143%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -171,6 +189,9 @@
     max-width: 100%;
     padding: 0 15px 20px 15px;
   }
+  #telaD .conteudo .texto {
+    justify-content: flex-start;
+  }
   #telaA .conteudo, #telaB .conteudo, #telaC .conteudo, #telaD .conteudo {
     margin-left: 0;
     margin-right: 0;
@@ -215,7 +236,7 @@
   #telaA .botao:hover, #telaB .botao:hover {
     background-color: #25170f;
   }
-  footer {
+  #telaA footer {
     border-top: none;
   }
 
@@ -251,20 +272,50 @@
     display: none;
   }
   .opcoes-opiniao {
-    margin-left: 0;
-    flex-shrink: 0;
-    flex-basis: 100%
+    max-width: 90%;
+    width: 20em;
+    margin: 0;
   }
-  .opcoes-opiniao div {
-    width: 4.5em;
+  .opcoes-opiniao>div  {
+    display: flex;
+    align-items: center;
+    border: 1px solid #de1266;
+  }
+  .opcoes-opiniao>div:first-of-type  {
+    border-right: none;
+  }
+  .opcoes-opiniao>div:last-of-type  {
+    border-left: none;
   }
   .opcoes-opiniao input {
-    display: block;
+    display: none;
   }
   .opcoes-opiniao label {
-    display: block;
-    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 7px;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    font-size: .9em
   }
+  .opcoes-opiniao>div:hover {
+    background-color: #fce2e4;
+  }
+  .opcoes-opiniao input[type="radio"]:checked+label, input[type="checkbox"]:checked+label {
+  background-color: #f7a1a8;
+  color: #8F0A3F;
+}
+.item-opiniao .rotulo {
+  display: block;
+}
+.checkmark {
+  display: none;
+}
+
 
   /* MÚLTIPLA ESCOLHA */
   .tela-radio {

@@ -181,6 +181,8 @@ $(document).ready(function() {
       $(texto).show();
       qtdOds++;
     }
+    var primeiroTexto = "#textoOds" + perfis[0];
+    $(primeiroTexto).addClass("primeiro-texto")
 
     // PARA TESTAR
     // var qtdOds = 2;
@@ -298,15 +300,40 @@ $(document).ready(function() {
   }
 
   //Funcionamento barra de progresso no input range
-  $("input[type=range]").on('input', function(e) {
-    var val = ($(this).val() - $(this).attr('min')) / ($(this).attr('max') - $(this).attr('min'));
+  $("input[type=range]").on('input', function(){
+    var este = $(this);
+    progresso(este);
+  } );
+
+  function progresso(este) {
+    var val = (este.val() - este.attr('min')) / (este.attr('max') - este.attr('min'));
     var percent = val * 100;
 
-    $(this).css('background', 'linear-gradient(to right, transparent 0%, transparent 10px, #de1266 10px, #de1266 ' + percent + '%, transparent ' + percent + '%, transparent 100%)')
+    este.css('background', 'linear-gradient(to right, transparent 0%, transparent 10px, #de1266 10px, #de1266 ' + percent + '%, transparent ' + percent + '%, transparent 100%)')
 
-    $(this).css('background',
+    este.css('background',
       '-moz-linear-gradient(left center, #de1266 0%, #de1266 ' + percent + '%,  transparent ' + percent + '%,  transparent 100%)');
+  }
+  // Arredonda valor do range input
+  $("input[type=range]").mouseup(function(){
+    var este = $(this);
+    arredondaValor(este)
   });
+  var todosRanges = document.querySelectorAll("input[type=range]");
+  for (var i = 0; i < todosRanges.length; i++) {
+    todosRanges[i].addEventListener("touchend", function(){
+      var este = $(this);
+      arredondaValor(este)
+    });
+  }
+  function arredondaValor(este){
+    var valor = este.val();
+    console.log(valor);
+    var valorredondo = Math.round(valor);
+    console.log(valorredondo);
+    este.val(valorredondo);
+    progresso(este);
+  }
 
 
 })

@@ -1,7 +1,7 @@
-#telaA, nav,
+/* #telaA, nav, */
 #telaB,
-/* .tela-quiz, .navegacao, */
-/* #tela1, */
+.tela-quiz, .navegacao,
+#tela1,
 #tela2,
 #tela3,
 #tela4,
@@ -12,8 +12,8 @@
 #tela9,
 #tela10,
 #telaC,
-#telaD
-/* #executa */
+#telaD,
+#executa
  {
   display: none;
 }
