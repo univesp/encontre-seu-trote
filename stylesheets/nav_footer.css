@@ -1,9 +1,9 @@
 nav > .container, nav > .container-fluid {
   position: absolute;
   display: flex;
-  justify-content: flex-end;
-  padding-left: 1%;
-  padding-right: 1%;
+  justify-content: space-between;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 /* nav {
@@ -11,7 +11,7 @@ nav > .container, nav > .container-fluid {
 } */
 
 nav .logo {
-  position: fixed;
+  position: relative;
 }
 
 /* Botão Pular para Conteúdo Principal */
@@ -29,10 +29,11 @@ nav .logo img {
 /* Botões do Navbar */
 
 nav .nav-link {
-  height: 100%;
+  /* height: 100%; */
   color: black;
   background-color: transparent;
   right: 150px;
+  padding-top: 20px;
 }
 
 nav .nav-link:focus,
@@ -83,7 +84,17 @@ main {
   padding-bottom: 0;
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 991.98px) {
 
+  nav .nav-link:focus,
+  nav .nav-link:hover,
+  nav .nav-link[aria-expanded="true"] {
+    background-color: #ffeea8;
+    /* color: #ffde52; */
+    border-color: #fff;
+  }
+  nav .dropdown-menu {
+    border: none;
+  }
 
 }
