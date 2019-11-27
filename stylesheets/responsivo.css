@@ -99,7 +99,7 @@
     position: static;
     height: 220px;
     overflow: hidden;
-    margin-bottom: 2em;
+    /* margin-bottom: 2em; */
   }
   .tela-intro .imagem img {
     display: block;
@@ -211,7 +211,7 @@
     background-color: #47eaaf;
   }
   #telaC .conteudo .texto {
-    padding: 0 15px 30px 15px;
+    padding: 30px 15px 30px 15px;
   }
   #telaD .conteudo .texto {
 
