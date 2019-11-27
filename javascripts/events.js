@@ -32,7 +32,8 @@ $(document).ready(function() {
   //Chama tela final
   function callFinal() {
     $("#telaC").hide();
-    $("#telaD").css("display", " flex")
+    $("#telaD").css("display", " flex");
+    window.scrollTo(0, 0);
   }
   $("#telaC .botao").click(callFinal)
 
